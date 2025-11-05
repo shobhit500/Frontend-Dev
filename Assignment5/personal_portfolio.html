@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shobhit's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f2ff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5em;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 120px 5% 40px;
+    }
+
+    .bio {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background-color: #ffffff;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .bio img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .bio p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shobhit</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bio">
+      <img src="profile.jpg" alt="Profile Photo">
+      <p>Hello! I'm Shobhit, a passionate developer who enjoys building clean, responsive web applications. I like to solve real-world problems with code and continuously learning new technologies.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shobhit. All rights reserved.</p>
+  </footer>
+</body>
+</html>

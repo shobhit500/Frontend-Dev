@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Members</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .team-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      box-sizing: border-box;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .highlight {
+      background-color: #e0f7fa;
+      border: 2px solid #00796b;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+
+    .card p {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 600px) {
+      .team-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meet Our Team</h1>
+  <div class="team-container">
+    <div class="card highlight">
+      <h2>Priya Sharma</h2>
+      <p><strong>Team Lead</strong></p>
+      <p>Priya guides the team with her leadership and technical expertise in web development.</p>
+    </div>
+    <div class="card">
+      <h2>Ravi Verma</h2>
+      <p><strong>UI Designer</strong></p>
+      <p>Ravi creates beautiful and user-friendly interfaces for all our projects.</p>
+    </div>
+    <div class="card">
+      <h2>Anjali Mehta</h2>
+      <p><strong>Backend Developer</strong></p>
+      <p>Anjali builds robust server-side logic and ensures smooth data flow.</p>
+    </div>
+  </div>
+
+</body>
+</html>
