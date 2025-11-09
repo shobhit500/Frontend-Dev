@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Element selector: targets all <p> elements */
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Class selector: targets elements with class="highlight" */
+.highlight {
+  background-color: #fffae6;
+  border-left: 4px solid #ffc107;
+  padding: 10px;
+}
+
+/* ID selector: targets element with id="unique" */
+#unique {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* Attribute selector: targets elements with a title attribute */
+a[title] {
+  text-decoration: underline dotted;
+  color: #005fa3;
+}
+
+/* Attribute selector: targets input with placeholder */
+input[placeholder] {
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Descendant combinator: targets <p> inside .combinator */
+.combinator p {
+  background-color: #e6f7ff;
+}
+
+/* Child combinator: targets <span> directly inside .combinator */
+.combinator > span {
+  background-color: #d1ecf1;
+  display: block;
+  padding: 5px;
+}
+
+/* Adjacent sibling combinator: targets .next <p> after <h3> */
+h3 + .next {
+  color: #28a745;
+  font-style: italic;
+}
+
+/* General sibling combinator: targets .general <p> after <h3> */
+h3 ~ .general {
+  color: #6f42c1;
+  text-decoration: underline;
+}

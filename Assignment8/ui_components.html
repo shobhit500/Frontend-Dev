@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI Components Demo</title>
+  <link rel="stylesheet" href="ui-components.css" />
+  <style>
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+/* Card-like container */
+.ui-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+/* Search Bar */
+.ui-search {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.ui-search:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Buttons */
+.ui-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primary {
+  background-color: #0077cc;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #005fa3;
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Dropdown */
+.ui-dropdown {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.ui-dropdown:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>User Interface Components</h1>
+  </header>
+
+  <main>
+    <section class="ui-card">
+      <!-- Search Bar -->
+      <input type="search" placeholder="Search..." class="ui-search" />
+
+      <!-- Buttons -->
+      <div class="ui-buttons">
+        <button class="btn primary">Search</button>
+        <button class="btn secondary">Reset</button>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <select class="ui-dropdown">
+        <option selected disabled>Select category</option>
+        <option value="books">Books</option>
+        <option value="movies">Movies</option>
+        <option value="music">Music</option>
+      </select>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UI Demo</p>
+  </footer>
+</body>
+</html>

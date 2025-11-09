@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Tooltip Demo</title>
+  <link rel="stylesheet" href="tooltip-demo.css" />
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Layout */
+header, footer {
+  margin-bottom: 20px;
+}
+
+.tooltip-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.tooltip-box {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-target {
+  font-size: 24px;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: default;
+}
+
+/* Tooltip styling */
+.tooltip-text {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Arrow */
+.tooltip-text::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip-box:hover .tooltip-text {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Tooltip Demonstration</h1>
+  </header>
+
+  <main>
+    <section class="tooltip-container">
+      <div class="tooltip-box">
+        <span class="tooltip-target">💡</span>
+        <span class="tooltip-text">Idea icon tooltip</span>
+      </div>
+
+      <div class="tooltip-box">
+        <span class="tooltip-target">📞</span>
+        <span class="tooltip-text">Call icon tooltip</span>
+      </div>
+
+      <div class="tooltip-box">
+        <span class="tooltip-target">Help</span>
+        <span class="tooltip-text">This is a help tooltip</span>
+      </div>
+
+      <div class="tooltip-box">
+        <span class="tooltip-target">Info</span>
+        <span class="tooltip-text">More information here</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tooltip Demo</p>
+  </footer>
+</body>
+</html>

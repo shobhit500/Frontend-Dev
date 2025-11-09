@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Combined Effects Demo</title>
+  <link rel="stylesheet" href="combined-effects.css" />
+  <style>
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f4ff, #fef6f9);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Flexbox layout */
+.effects-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* Base button style */
+.effect-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: scale(1);
+}
+
+/* Hover + transform + pseudo-class */
+.effect-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Focus outline */
+.effect-btn:focus {
+  outline: 3px solid rgba(0, 119, 204, 0.4);
+}
+
+/* Button variations */
+.primary {
+  background-color: #0077cc;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #005fa3;
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #5a6268;
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+}
+
+.outline:hover {
+  background-color: #e6f2ff;
+}
+
+.glow {
+  background-color: #673ab7;
+  color: white;
+  box-shadow: 0 0 10px rgba(103, 58, 183, 0.4);
+}
+
+.glow:hover {
+  background-color: #5e35b1;
+  box-shadow: 0 0 20px rgba(103, 58, 183, 0.6);
+}
+
+/* Responsive stacking */
+@media (max-width: 600px) {
+  .effects-container {
+    flex-direction: column;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Combined CSS Effects</h1>
+  </header>
+
+  <main class="effects-container">
+    <button class="effect-btn primary">Primary</button>
+    <button class="effect-btn secondary">Secondary</button>
+    <button class="effect-btn outline">Outline</button>
+    <button class="effect-btn glow">Glow</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Effects Showcase</p>
+  </footer>
+</body>
+</html>

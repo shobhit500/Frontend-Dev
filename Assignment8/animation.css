@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.animation-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Moving Box */
+.move-box {
+  width: 150px;
+  height: 50px;
+  background-color: #0077cc;
+  color: white;
+  line-height: 50px;
+  border-radius: 8px;
+  animation: slide 3s ease-in-out infinite alternate;
+}
+
+/* Bouncing Ball */
+.bounce-ball {
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  border-radius: 50%;
+  animation: bounce 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Color Changing Text */
+.color-text {
+  font-size: 2rem;
+  animation: colorShift 4s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-100px); }
+}
+
+@keyframes colorShift {
+  0% { color: #0077cc; }
+  50% { color: #ff5722; }
+  100% { color: #28a745; }
+}

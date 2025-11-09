@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Button Collection</title>
+  <link rel="stylesheet" href="button-collection.css" />
+  <style>
+    /* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header, footer {
+  margin-bottom: 20px;
+}
+
+/* Flexbox Alignment */
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+/* Base Button Style */
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+/* Primary Button */
+.primary {
+  background-color: #0077cc;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #005fa3;
+}
+
+.primary:active {
+  background-color: #004b82;
+}
+
+/* Secondary Button */
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #5a6268;
+}
+
+.secondary:active {
+  background-color: #495057;
+}
+
+/* Outline Button */
+.outline {
+  background-color: transparent;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+}
+
+.outline:hover {
+  background-color: #e6f2ff;
+}
+
+.outline:active {
+  background-color: #cce4ff;
+}
+
+/* Disabled Button */
+.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Focus State */
+.btn:focus {
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Styled Button Collection</h1>
+  </header>
+
+  <main>
+    <section class="button-group">
+      <button class="btn primary">Primary</button>
+      <button class="btn secondary">Secondary</button>
+      <button class="btn outline">Outline</button>
+      <button class="btn disabled" disabled>Disabled</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Button Demo</p>
+  </footer>
+</body>
+</html>

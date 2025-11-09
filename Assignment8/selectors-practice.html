@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="selectors-practice.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice Page</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Element Selector</h2>
+      <p>This paragraph is styled using the element selector.</p>
+    </section>
+
+    <section>
+      <h2>Class Selector</h2>
+      <p class="highlight">This paragraph uses a class called "highlight".</p>
+    </section>
+
+    <section>
+      <h2>ID Selector</h2>
+      <p id="unique">This paragraph uses an ID called "unique".</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selector</h2>
+      <a href="#" title="tooltip">Hover over this link with a title attribute.</a>
+      <input type="text" placeholder="Type something..." />
+    </section>
+
+    <section>
+      <h2>Combinator Selectors</h2>
+      <div class="combinator">
+        <p>Descendant selector: styled because it's inside a div.</p>
+        <span>Direct child selector: styled only if directly inside div.</span>
+        <div>
+          <p>Nested paragraph not affected by direct child selector.</p>
+        </div>
+        <h3>Sibling Selectors</h3>
+        <p class="next">This paragraph follows an h3 (adjacent sibling).</p>
+        <p class="general">This paragraph is a general sibling of h3.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Selectors Demo</p>
+  </footer>
+</body>
+</html>

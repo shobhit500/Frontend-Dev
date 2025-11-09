@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pseudo-Class Demonstration</title>
+  <link rel="stylesheet" href="pseudo-classes.css" />
+  <style>
+    /* Basic Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Layout */
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.example {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 22%;
+  min-width: 250px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Pseudo-Class Styles */
+.hover-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hover-link:hover {
+  background-color: #005fa3;
+}
+
+.focus-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.focus-input:focus {
+  border-color: #0077cc;
+  outline: none;
+  background-color: #e6f2ff;
+}
+
+.active-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-button:active {
+  background-color: #1e7e34;
+}
+
+.nth-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nth-list li {
+  padding: 5px;
+  background-color: #eee;
+  margin: 3px 0;
+}
+
+.nth-list li:nth-child(odd) {
+  background-color: #d1ecf1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .examples {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .example {
+    width: 90%;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pseudo-Class Examples</h1>
+  </header>
+
+  <main>
+    <section class="examples">
+      <!-- :hover -->
+      <div class="example">
+        <a href="#" class="hover-link">Hover over me</a>
+        <p><strong>:hover</strong> applies when the user hovers over an element.</p>
+      </div>
+
+      <!-- :focus -->
+      <div class="example">
+        <input type="text" placeholder="Click to focus" class="focus-input" />
+        <p><strong>:focus</strong> activates when an element gains focus (e.g., input field).</p>
+      </div>
+
+      <!-- :active -->
+      <div class="example">
+        <button class="active-button">Click me</button>
+        <p><strong>:active</strong> applies while the element is being clicked.</p>
+      </div>
+
+      <!-- :nth-child() -->
+      <div class="example">
+        <ul class="nth-list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+        <p><strong>:nth-child()</strong> targets specific children in a list or group.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pseudo-Class Demo</p>
+  </footer>
+</body>
+</html>
