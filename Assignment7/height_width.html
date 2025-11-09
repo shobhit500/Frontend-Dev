@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Height and Width Practice</title>
+  <link rel="stylesheet" href="height-width.css" />
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+main.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 80vh; /* centers vertically within viewport */
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Box 1: Fixed px dimensions */
+.box-px {
+  width: 200px;
+  height: 100px;
+  background-color: #007BFF;
+}
+
+/* Box 2: % and vh units */
+.box-percent {
+  width: 50%;
+  height: 20vh;
+  background-color: #28A745;
+  min-height: 100px; /* min-height demo */
+}
+
+/* Box 3: em units and overflow */
+.box-em {
+  width: 20em;
+  height: 10em;
+  background-color: #DC3545;
+  max-width: 300px; /* max-width demo */
+  overflow: auto; /* scroll if content overflows */
+}
+
+/* Overflow content styling */
+.overflow-content {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Height and Width Practice Layout</h1>
+  </header>
+
+  <main class="flex-center">
+    <section class="box box-px">
+      <p>Box 1: 200px × 100px</p>
+    </section>
+    <section class="box box-percent">
+      <p>Box 2: 50% width, 20vh height</p>
+    </section>
+    <section class="box box-em">
+      <p>Box 3: 20em × 10em</p>
+      <div class="overflow-content">
+        This box has overflow content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Shobhit | CSS Sizing Demo</p>
+  </footer>
+</body>
+</html>

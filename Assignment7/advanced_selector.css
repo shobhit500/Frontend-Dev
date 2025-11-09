@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* ──────────────────────────────── */
+/* Attribute Selectors */
+/* Select input with type="text" */
+input[type="text"] {
+  border: 2px solid #007BFF;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Select anchor links starting with https */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+/* ──────────────────────────────── */
+/* Pseudo-classes */
+/* Highlight on hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus styling */
+input:focus {
+  outline: 2px solid #FF5722;
+}
+
+/* Style every odd list item */
+.fancy-list li:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+
+/* ──────────────────────────────── */
+/* Pseudo-elements */
+/* Add decorative text before list items */
+.fancy-list li::before {
+  content: "★ ";
+  color: gold;
+}
+
+/* Add note after list items */
+.fancy-list li::after {
+  content: " ✔";
+  color: green;
+}
+
+/* ──────────────────────────────── */
+/* Combinators */
+/* Descendant selector: all p inside .parent */
+.parent p {
+  color: #007BFF;
+}
+
+/* Child combinator: only direct p children */
+.parent > p {
+  font-weight: bold;
+}
+
+/* Adjacent sibling: span immediately after p */
+.parent p + span {
+  color: #DC3545;
+}
+
+/* General sibling: all divs after any p */
+.parent p ~ div {
+  background-color: #f0f0f0;
+  padding: 0.5em;
+  border-left: 3px solid #28A745;
+}

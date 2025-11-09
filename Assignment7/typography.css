@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Page Styling */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Verdana', sans-serif;
+  font-weight: 600;
+  color: #2a5d84;
+  margin-bottom: 20px;
+}
+
+/* Article Paragraph Styling */
+article p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+/* Styling Inline Elements */
+mark {
+  background-color: #fffa9e;
+  color: #cc5500;
+  font-weight: bold;
+  padding: 0 4px;
+}
+
+strong {
+  color: #2e5c9a;
+  font-weight: 700;
+}
+
+em {
+  color: #b43c3c;
+  font-style: italic;
+}
+
+/* Pseudo-elements for Emphasis */
+article p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e5c9a;
+}
+
+article p::first-line {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}

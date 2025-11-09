@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline and Focus Styling Form</title>
+  <link rel="stylesheet" href="outline-form.css">
+  <style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.5;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Center the form using Flexbox */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* uniform spacing between elements */
+}
+
+/* Label Styling */
+label {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Input and Textarea Styling */
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: 2px solid transparent; /* default transparent outline */
+  outline-offset: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Outline Demonstrations on Focus */
+input:focus,
+textarea:focus {
+  outline-color: #4a90e2; /* blue outline on focus */
+  outline-style: solid;
+  outline-offset: 4px;
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+/* Additional variation for visual learning */
+#email:focus {
+  outline-style: dashed;
+  outline-color: #f39c12;
+}
+
+#message:focus {
+  outline-style: dotted;
+  outline-color: #27ae60;
+}
+
+/* Button Styling */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Outline & Focus Styling Form</h1>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" placeholder="Write your message..."></textarea>
+
+        <button typ

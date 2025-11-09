@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borders and Padding Demo</title>
+  <link rel="stylesheet" href="borders-padding.css" />
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Flex container for horizontal alignment */
+.box-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Base box styling */
+.box {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Border styles */
+.solid {
+  border: 3px solid #007BFF;
+}
+.dashed {
+  border: 3px dashed #28A745;
+}
+.double {
+  border: 5px double #DC3545;
+}
+.groove {
+  border: 6px groove #6C757D;
+}
+
+/* Rounded corners */
+.rounded.small {
+  border: 3px solid #17A2B8;
+  border-radius: 5px;
+}
+.rounded.medium {
+  border: 3px solid #FFC107;
+  border-radius: 15px;
+}
+.rounded.large {
+  border: 3px solid #6610f2;
+  border-radius: 30px;
+}
+
+/* Padding examples */
+.padded {
+  border: 2px solid #333;
+}
+.pad-small {
+  padding: 5px;
+}
+.pad-medium {
+  padding: 15px;
+}
+.pad-large {
+  padding: 25px;
+}
+
+/* Hover effect with smooth transition */
+.box:hover {
+  border-color: #ff5722;
+}
+</style>
+<body>
+  <header>
+    <h1>Borders and Padding Demonstration</h1>
+  </header>
+
+  <main>
+    <section class="box-container">
+      <div class="box solid">Solid Border</div>
+      <div class="box dashed">Dashed Border</div>
+      <div class="box double">Double Border</div>
+      <div class="box groove">Groove Border</div>
+    </section>
+
+    <section class="box-container">
+      <div class="box rounded small">Small Radius</div>
+      <div class="box rounded medium">Medium Radius</div>
+      <div class="box rounded large">Large Radius</div>
+    </section>
+
+    <section class="box-container">
+      <div class="box padded pad-small">Small Padding</div>
+      <div class="box padded pad-medium">Medium Padding</div>
+      <div class="box padded pad-large">Large Padding</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Shobhit | HTML & CSS Demo</p>
+  </footer>
+</body>
+</html>

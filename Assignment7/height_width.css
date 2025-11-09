@@ -1,0 +1,66 @@
+/* Basic page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+main.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 80vh; /* centers vertically within viewport */
+  flex-wrap: wrap;
+}
+
+/* Base box styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Box 1: Fixed px dimensions */
+.box-px {
+  width: 200px;
+  height: 100px;
+  background-color: #007BFF;
+}
+
+/* Box 2: % and vh units */
+.box-percent {
+  width: 50%;
+  height: 20vh;
+  background-color: #28A745;
+  min-height: 100px; /* min-height demo */
+}
+
+/* Box 3: em units and overflow */
+.box-em {
+  width: 20em;
+  height: 10em;
+  background-color: #DC3545;
+  max-width: 300px; /* max-width demo */
+  overflow: auto; /* scroll if content overflows */
+}
+
+/* Overflow content styling */
+.overflow-content {
+  margin-top: 1em;
+  font-size: 0.9em;
+}

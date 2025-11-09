@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+/* Text shadow for heading */
+header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Flex container for cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Base card styling */
+.card {
+  width: 250px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+/* Box shadow variations */
+.shadow-light {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.shadow-medium {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+.shadow-heavy {
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover lift effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.5);
+}
