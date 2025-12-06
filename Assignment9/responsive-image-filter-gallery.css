@@ -1,0 +1,86 @@
+/* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header, footer {
+  margin-bottom: 20px;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Image Box Styling */
+.image-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: filter 0.4s ease-in-out;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.4s ease-in-out;
+}
+
+/* Filter Effects */
+.blur img {
+  filter: blur(3px);
+}
+
+.grayscale img {
+  filter: grayscale(100%);
+}
+
+.sepia img {
+  filter: sepia(100%);
+}
+
+.brightness img {
+  filter: brightness(150%);
+}
+
+.contrast img {
+  filter: contrast(200%);
+}
+
+.hue img {
+  filter: hue-rotate(180deg);
+}
+
+/* Hover: Remove Filter */
+.image-box:hover img {
+  filter: none;
+}
+
+/* Caption Styling */
+figcaption {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+/* Responsive Stacking */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

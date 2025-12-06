@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="q9.css">
+</head>
+
+<body>
+
+    <h1 class="title">Responsive Design Principles</h1>
+
+    <div class="grid-container">
+
+        <!-- Fluid Layouts -->
+        <div class="box">
+            <h2>Fluid Layouts</h2>
+            <p>Use percentage-based widths so elements scale with screen size.</p>
+            <pre>
+.container {
+    width: 90%;
+}
+            </pre>
+        </div>
+
+        <!-- Flexible Media -->
+        <div class="box">
+            <h2>Flexible Media</h2>
+            <p>Images and videos scale automatically to fit the container.</p>
+            <pre>
+img {
+    max-width: 100%;
+}
+            </pre>
+        </div>
+
+        <!-- Breakpoints -->
+        <div class="box">
+            <h2>Breakpoints</h2>
+            <p>Adjust layout using media queries at specific screen widths.</p>
+            <pre>
+@media (max-width: 600px) {
+    body { padding: 10px; }
+}
+            </pre>
+        </div>
+
+    </div>
+
+</body>
+</html>

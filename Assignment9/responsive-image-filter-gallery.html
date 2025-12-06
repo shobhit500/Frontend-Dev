@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Filter Gallery</title>
+  <link rel="stylesheet" href="responsive-image-filter-gallery.css" />
+  <style>
+    /* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header, footer {
+  margin-bottom: 20px;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Image Box Styling */
+.image-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: filter 0.4s ease-in-out;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.4s ease-in-out;
+}
+
+/* Filter Effects */
+.blur img {
+  filter: blur(3px);
+}
+
+.grayscale img {
+  filter: grayscale(100%);
+}
+
+.sepia img {
+  filter: sepia(100%);
+}
+
+.brightness img {
+  filter: brightness(150%);
+}
+
+.contrast img {
+  filter: contrast(200%);
+}
+
+.hue img {
+  filter: hue-rotate(180deg);
+}
+
+/* Hover: Remove Filter */
+.image-box:hover img {
+  filter: none;
+}
+
+/* Caption Styling */
+figcaption {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+/* Responsive Stacking */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Image Filter Gallery</h1>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <figure class="image-box blur">
+        <img src="images/img1.jpg" alt="Blur effect" />
+        <figcaption>Blur Filter</figcaption>
+      </figure>
+
+      <figure class="image-box grayscale">
+        <img src="images/img2.jpg" alt="Grayscale effect" />
+        <figcaption>Grayscale Filter</figcaption>
+      </figure>
+
+      <figure class="image-box sepia">
+        <img src="images/img3.jpg" alt="Sepia effect" />
+        <figcaption>Sepia Filter</figcaption>
+      </figure>
+
+      <figure class="image-box brightness">
+        <img src="images/img4.jpg" alt="Brightness effect" />
+        <figcaption>Brightness Filter</figcaption>
+      </figure>
+
+      <figure class="image-box contrast">
+        <img src="images/img5.jpg" alt="Contrast effect" />
+        <figcaption>Contrast Filter</figcaption>
+      </figure>
+
+      <figure class="image-box hue">
+        <img src="images/img6.jpg" alt="Hue-rotate effect" />
+        <figcaption>Hue-Rotate Filter</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Filter Gallery Demo</p>
+  </footer>
+</body>
+</html>
