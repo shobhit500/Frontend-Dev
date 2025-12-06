@@ -1,0 +1,12 @@
+.list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f7f7f7;
+}
+
+/* Header styling improvements */
+header h1 {
+    font-size: 1.8rem;
+}

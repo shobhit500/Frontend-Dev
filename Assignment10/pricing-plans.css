@@ -1,0 +1,14 @@
+.plan-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover styling */
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2); /* similar to shadow-lg */
+}
+
+/* Adjust list group inside colored card (Pro plan) */
+.bg-primary .list-group-item {
+    background: rgba(255,255,255,0.9);
+}

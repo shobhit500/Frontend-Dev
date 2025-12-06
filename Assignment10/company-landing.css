@@ -1,0 +1,7 @@
+.hero {
+    height: 80vh;
+    background: url('https://via.placeholder.com/1400x700') center/cover no-repeat;
+    /* Slight overlay for readability */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}

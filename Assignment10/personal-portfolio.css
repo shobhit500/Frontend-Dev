@@ -1,0 +1,10 @@
+img {
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Improve button spacing on smaller screens */
+@media (max-width: 576px) {
+    button {
+        margin-bottom: 10px;
+    }
+}

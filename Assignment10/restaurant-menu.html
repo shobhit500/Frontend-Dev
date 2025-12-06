@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Menu - Restaurant</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Q4.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="text-center py-4">
+        <h1 class="fw-bold">Today's Menu</h1>
+        <p class="lead text-muted">Freshly prepared dishes just for you</p>
+    </header>
+
+    <main class="container py-4">
+
+        <!-- IMAGE WITH CAPTION -->
+        <section class="text-center mb-5">
+            <img src="https://via.placeholder.com/600x300" class="img-fluid rounded shadow" alt="Food Image">
+            <p class="mt-2 text-muted">Our Chef’s Signature Dish</p>
+        </section>
+
+        <!-- MENU TABLE -->
+        <section class="mb-5">
+            <h2 class="fw-bold mb-3 text-center">Menu Items</h2>
+            
+            <!-- Bootstrap Table -->
+            <table class="table table-striped table-hover text-center align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Category</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Starters</td>
+                        <td>Tomato Soup</td>
+                        <td>₹120</td>
+                    </tr>
+                    <tr>
+                        <td>Main Course</td>
+                        <td>Paneer Butter Masala</td>
+                        <td>₹250</td>
+                    </tr>
+                    <tr>
+                        <td>Main Course</td>
+                        <td>Veg Biryani</td>
+                        <td>₹180</td>
+                    </tr>
+                    <tr>
+                        <td>Dessert</td>
+                        <td>Gulab Jamun</td>
+                        <td>₹90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- CHEF SPECIALS -->
+        <section class="mb-5">
+            <h2 class="fw-bold mb-3 text-center">Chef's Specials</h2>
+
+            <!-- Bootstrap List Group -->
+            <ul class="list-group mx-auto" style="max-width: 400px;">
+                <li class="list-group-item list-group-item-warning fw-bold">Paneer Tikka Sizzler</li>
+                <li class="list-group-item list-group-item-info fw-bold">Special Italian Pasta</li>
+                <li class="list-group-item list-group-item-success fw-bold">Chocolate Lava Cake</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-3">
+        <p class="text-muted mb-0">© 2025 Restaurant Menu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

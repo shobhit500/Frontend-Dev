@@ -1,0 +1,10 @@
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Smooth hover for future enhancements */
+.progress-bar {
+    font-size: 1.1rem;
+}
