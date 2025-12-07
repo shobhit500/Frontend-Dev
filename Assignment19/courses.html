@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Courses</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #courseList { margin-top: 20px; }
+    .course { margin: 5px 0; padding: 5px; border: 1px solid #ccc; }
+    .highlight { background-color: yellow; }
+    #count { margin-top: 10px; font-weight: bold; }
+    #clearSearch { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Courses</h1>
+  </header>
+
+  <main>
+    <input type="text" id="searchInput" placeholder="Search courses...">
+    <button id="clearSearch">Clear</button>
+
+```
+<div id="courseList">
+  <div class="course">JavaScript Basics</div>
+  <div class="course">HTML & CSS Fundamentals</div>
+  <div class="course">React for Beginners</div>
+  <div class="course">Python Programming</div>
+  <div class="course">Data Structures in Java</div>
+</div>
+
+<div id="count">Matched Courses: 0</div>
+```
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Learning Platform</p>
+  </footer>
+
+  <script src="courses.js"></script>
+
+</body>
+</html>

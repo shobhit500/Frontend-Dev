@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Panel</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .topic { margin: 5px 0; cursor: pointer; padding: 5px; border: 1px solid #ccc; display: inline-block; }
+    .subscribed { background-color: #ccffcc; }
+    #message { margin-top: 10px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Event Subscription Panel</h1>
+  </header>
+
+  <main>
+    <section class="subscriptions">
+      <div id="topics">
+        <div class="topic">News</div>
+        <div class="topic">Updates</div>
+        <div class="topic">Offers</div>
+      </div>
+
+```
+  <button id="subscribe">Subscribe</button>
+  <button id="unsubscribe">Unsubscribe</button>
+  <button id="addTopic">Add Topic</button>
+  <button id="removeTopic">Remove Last Topic</button>
+
+  <div id="message"></div>
+</section>
+```
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="subscription.js"></script>
+
+</body>
+</html>

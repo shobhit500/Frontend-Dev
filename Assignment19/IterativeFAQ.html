@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq { margin: 20px; }
+    .question { font-weight: bold; cursor: pointer; margin: 10px 0; padding: 5px; }
+    .answer { display: none; margin-left: 20px; }
+    .highlight { background-color: #ffffcc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FAQ Section</h1>
+  </header>
+
+  <main>
+    <section class="faq">
+      <div class="faq-item">
+        <div class="question">What is your return policy?</div>
+        <div class="answer">You can return products within 30 days of purchase.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question">Do you offer international shipping?</div>
+        <div class="answer">Yes, we ship to most countries worldwide.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question">How can I track my order?</div>
+        <div class="answer">Tracking information is emailed once the order is shipped.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question">Can I change my order after placing it?</div>
+        <div class="answer">Yes, within 24 hours of placing the order.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question">Have a question? Ask here:</div>
+        <input type="text" class="faq-input" placeholder="Type your question">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="faq.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Members Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .team { margin: 20px; }
+    .department { font-weight: bold; margin-top: 10px; cursor: pointer; }
+    .manager { color: darkblue; cursor: pointer; margin-left: 20px; }
+    .employee { margin-left: 40px; cursor: pointer; }
+    .contact { display: none; font-size: 0.9em; color: green; }
+    .highlight { background-color: #ffffcc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Team Members Directory</h1>
+  </header>
+
+  <main>
+    <section class="team">
+      <div class="department">
+        Sales Department
+        <div class="manager">Alice (Manager)
+          <div class="employee">Bob <span class="contact">Email: bob@example.com</span></div>
+          <div class="employee">Charlie <span class="contact">Email: charlie@example.com</span></div>
+        </div>
+        <div class="manager">David (Manager)
+          <div class="employee">Eve <span class="contact">Email: eve@example.com</span></div>
+          <div class="employee">Frank <span class="contact">Email: frank@example.com</span></div>
+        </div>
+      </div>
+
+```
+  <div class="department">
+    IT Department
+    <div class="manager">Grace (Manager)
+      <div class="employee">Heidi <span class="contact">Email: heidi@example.com</span></div>
+      <div class="employee">Ivan <span class="contact">Email: ivan@example.com</span></div>
+    </div>
+  </div>
+
+  <button id="highlightRandom">Highlight Random Employee's Siblings</button>
+  <button id="toggleTeam">Collapse/Expand Team</button>
+</section>
+```
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Company</p>
+  </footer>
+
+  <script src="team.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-jQuery Widgets Dashboard</title>
+  <!-- jQuery Version 1.x for Carousel and Active Widget -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- jQuery Version 3.x for Modal and Tooltip -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .carousel { width: 300px; height: 150px; border: 1px solid #ccc; overflow: hidden; margin-bottom: 10px; }
+    .carousel-item { display: none; padding: 20px; background-color: #eee; text-align: center; }
+    .active-widget { border: 2px solid #f00; }
+    .tooltip { position: absolute; background: #333; color: #fff; padding: 5px; border-radius: 4px; display: none; }
+    .widget { display: inline-block; margin: 5px; padding: 10px; border: 1px solid #666; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Dashboard</h1>
+
+  <!-- Carousel Slider -->
+
+  <div class="carousel">
+    <div class="carousel-item">Slide 1</div>
+    <div class="carousel-item">Slide 2</div>
+    <div class="carousel-item">Slide 3</div>
+  </div>
+
+  <!-- Widgets -->
+
+  <div class="widget-container">
+    <div class="widget" data-tooltip="Widget A info">Widget A</div>
+    <div class="widget" data-tooltip="Widget B info">Widget B</div>
+    <div class="widget" data-tooltip="Widget C info">Widget C</div>
+  </div>
+
+  <!-- Modal Trigger -->
+
+<button id="showModal">Show Notification</button>
+
+  <!-- Modal -->
+
+  <div id="modal" style="display:none; position:fixed; top:30%; left:40%; background:#fff; padding:20px; border:1px solid #000;">
+    <p>Notification: New update available!</p>
+    <button id="closeModal">Close</button>
+  </div>
+
+  <div class="tooltip"></div>
+
+  <script src="multi-jquery.js"></script>
+
+</body>
+</html>

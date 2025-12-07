@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Blog Posts</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .post { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+    .highlight { background-color: #ffff99; }
+    .tags { font-size: 0.9em; color: #555; margin-top: 5px; }
+    button { margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Blog Panel</h1>
+  </header>
+
+  <main>
+    <div>
+      <button id="addPost">Add New Post</button>
+      <button id="prependPost">Prepend Featured Post</button>
+      <button id="removeLast">Remove Last Post</button>
+    </div>
+
+```
+<div id="posts">
+  <div class="post">
+    <h3>Introduction to jQuery</h3>
+    <p>Learn the basics of jQuery for dynamic web applications.</p>
+    <div class="tags">Tags: Web, JS</div>
+  </div>
+  <div class="post">
+    <h3>Advanced CSS Techniques</h3>
+    <p>Explore animations, flexbox, grid, and responsive design.</p>
+    <div class="tags">Tags: CSS, Design</div>
+  </div>
+</div>
+
+<div style="margin-top:10px;">
+  <input type="text" id="highlightKeyword" placeholder="Highlight posts by keyword">
+  <button id="highlightBtn">Highlight</button>
+</div>
+```
+
+  </main>
+
+  <script src="blog.js"></script>
+
+</body>
+</html>
