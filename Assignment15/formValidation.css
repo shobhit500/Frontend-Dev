@@ -1,0 +1,19 @@
+.form-group {
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+#successMessage {
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}

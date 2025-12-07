@@ -1,0 +1,23 @@
+#mouse-box {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #333;
+  margin: 20px auto;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* ensures dots don't block mouse events */
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}

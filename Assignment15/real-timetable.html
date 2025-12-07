@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Table Filter</h1>
+
+  <input type="text" id="search" placeholder="Search by Name or Branch">
+
+  <table id="student-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>CGPA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Alice</td><td>CSE</td><td>9.1</td></tr>
+      <tr><td>Bob</td><td>ECE</td><td>8.3</td></tr>
+      <tr><td>Charlie</td><td>ME</td><td>7.5</td></tr>
+      <tr><td>Diana</td><td>CSE</td><td>9.0</td></tr>
+      <tr><td>Eva</td><td>ECE</td><td>8.7</td></tr>
+    </tbody>
+  </table>
+
+  <p id="no-results" style="display:none;">No results found</p>
+
+  <script src="tableFilter.js"></script>
+</body>
+</html>
