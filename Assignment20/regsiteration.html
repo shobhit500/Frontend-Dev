@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration (Axios)</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+
+    .success {
+      color: green;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration</h2>
+
+  <input type="text" id="name" placeholder="Enter Name" />
+  <input type="email" id="email" placeholder="Enter Email" />
+  <input type="password" id="password" placeholder="Enter Password" />
+  <button onclick="registerUser()">Register</button>
+
+  <p id="message"></p>
+
+  <script src="script2.js"></script>
+</body>
+</html>

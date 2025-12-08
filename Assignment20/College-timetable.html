@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Timetable Viewer</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    h2 { color: #333; }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .class-box {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background: #f8f8f8;
+    }
+
+    .no-data {
+      padding: 20px;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📅 College Timetable Viewer</h2>
+
+  <label>Select Day:</label>
+  <select id="daySelect">
+    <option value="">-- Select --</option>
+    <option>Monday</option>
+    <option>Tuesday</option>
+    <option>Wednesday</option>
+    <option>Thursday</option>
+    <option>Friday</option>
+    <option>Saturday</option>
+  </select>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

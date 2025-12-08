@@ -1,0 +1,34 @@
+{
+  "registeredUsers": [
+    {
+      "id": 1,
+      "name": "Shobhit",
+      "email": "shobhit@gmail.com",
+      "password": "test1234"
+    },
+    {
+      "id": 2,
+      "name": "Radhika",
+      "email": "radhika@gmail.com",
+      "password": "pass12345"
+    },
+    {
+      "id": 3,
+      "name": "Amit",
+      "email": "amit@gmail.com",
+      "password": "amit0987"
+    },
+    {
+      "id": 4,
+      "name": "Sneha",
+      "email": "sneha@gmail.com",
+      "password": "sneha4567"
+    },
+    {
+      "id": 5,
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "password": "rahul1111"
+    }
+  ]
+}

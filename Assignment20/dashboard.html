@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi API Dashboard</title>
+  <style>
+    .card {
+      width: 200px;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 8px;
+      background: #f8f8f8;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .skeleton {
+      height: 20px;
+      background: #e0e0e0;
+      border-radius: 4px;
+      animation: blink 1s infinite alternate;
+    }
+
+    @keyframes blink {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    #warning {
+      margin-top: 20px;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Dashboard</h2>
+
+<div class="card">
+  <h3>Users</h3>
+  <div id="usersCount" class="skeleton"></div>
+</div>
+
+<div class="card">
+  <h3>Orders</h3>
+  <div id="ordersCount" class="skeleton"></div>
+</div>
+
+<div class="card">
+  <h3>Products</h3>
+  <div id="productsCount" class="skeleton"></div>
+</div>
+
+<p id="warning"></p>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

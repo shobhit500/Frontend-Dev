@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .completed { text-decoration: line-through; color: gray; }
+    .task-item { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+<h2>Task Manager</h2>
+
+<select id="filter">
+  <option value="">-- Sort By --</option>
+  <option value="low">Low Priority</option>
+  <option value="medium">Medium Priority</option>
+  <option value="high">High Priority</option>
+  <option value="completed">Completed</option>
+</select>
+
+<div id="taskList"></div>
+
+<script src="task-manager.js"></script>
+</body>
+</html>

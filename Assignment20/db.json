@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Wireless Mouse", "price": 599, "image": "https://via.placeholder.com/80" },
+    { "id": 2, "name": "Mechanical Keyboard", "price": 2499, "image": "https://via.placeholder.com/80" },
+    { "id": 3, "name": "USB-C Hub", "price": 1499, "image": "https://via.placeholder.com/80" },
+    { "id": 4, "name": "Gaming Headset", "price": 1999, "image": "https://via.placeholder.com/80" },
+    { "id": 5, "name": "Webcam HD", "price": 999, "image": "https://via.placeholder.com/80" }
+  ]
+}

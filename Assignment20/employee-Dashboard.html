@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Status Dashboard</title>
+<style>
+  table { width: 60%; border-collapse: collapse; margin: 20px auto; }
+  th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+  .active { background-color: #c8e6c9; }
+  .inactive { background-color: #ffcdd2; }
+  .error { color: red; text-align: center; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Employee Status Dashboard</h2>
+<div id="errorMsg" class="error"></div>
+
+<table id="employeeTable">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Toggle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Employees will be loaded here dynamically -->
+  </tbody>
+</table>
+
+<script src="employee-dashboard.js"></script>
+</body>
+</html>
